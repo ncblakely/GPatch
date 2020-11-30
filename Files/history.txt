@@ -1,0 +1,531 @@
+========================================================
+GIANTS:  CITIZEN KABUTO (TM)
+History.txt file
+========================================================
+October 26, 2020
+
+CONTENTS
+1. Release notes
+    1.1 Giants 1.5 update
+	1.2 Giants 1.497 update
+	1.3 Giants 1.496 update
+   	1.4 Giants 1.4 update
+	1.5 Giants 1.1 update
+
+========================================================
+========================================================
+1. RELEASE NOTES
+
+	1.1 - GIANTS 1.5 UPDATE
+Patch 1.5 includes all of the improvements made in previous versions, as well as the following changes:	
+
+Major Changes:
+• Added DirectX 9 renderer with improved performance, compatibility and capabilities compared to the old DX8/DX7 renderers. 
+• Added a launcher application with auto-update system and the ability to change more graphics settings.
+• Added lighting quality setting which enables vertex lighting/shading on significantly more objects and dynamic lighting on weapon effects when set to High.
+• Added per-pixel lighting effects on terrain (DX9 only) from weapon effects.
+• All enhanced GeForce 3 version character models are now included in the patch; improved lighting on Mecc model.
+
+Minor Changes:
+• Added a delay between votes.
+• Added ability to ban players.
+• Detente no longer prevents party house buildings from being damaged.
+• Switching teams mid-game now subtracts one point from a player's score.
+• Vimps can no longer be disabled in base build games.
+• Text is now sharper in higher resolutions.
+• Added killing spree messages in multiplayer.
+• Added separate death messages for headshot kills.
+• Removed drop spell keybind (right clicking a spell while in spell select mode will now remove the spell).
+• Removed Reaperski key binds, these are now rolled into regular Reaper movement keybindings.
+• Weapon switch keybinds now default to the mouse wheel instead of Q/Tab.
+• Restored some unused seamonster sound effects.
+• Added screen flash/shake effects to heavy weapon explosions.
+• Increased the LOD scaling factor for Very High model detail.
+• Remove restriction preventing Kabuto from playing in TDM game types.
+
+Maps:
+• New maps: Still Winter, Wishing Well.
+• Removed some maps added in patch 1.496/1.497 that were not played often in multiplayer.
+
+General Balance:
+• Base turrets will now lead their targets with much greater accuracy.
+• Flares are now on a separate refire delay and are not affected by firing weapons.
+• Mines are now destroyed when the owning player dies.
+
+Mecc:
+• MP only: Added Incendiary Grenade to the Mecc inventory. Deals less damage with less force on impact than the standard grenade, but lights targets on fire.
+• MP only: Added EMP Grenade to the Mecc inventory. Deals less damage than the standard grenade, but temporarily disables pack item fuel on Meccs and disables base turrets for a longer period of time.
+• MP only: increased deployable turret range from 200 to 600 units; projectile speed by 66%; health by 50%.
+• Kills made by deployable turrets now give credit to the player who placed them. Limit changed from 5 per team to 2 per player.
+• Mecc mortars now arm in mid flight over a period of time.
+• Increased (non-gyro) mortar damage against buildings by 20%.
+• Reduced sniper rifle damage against base buildings and Kabuto.
+• Increased machine gun rate of fire and damage in multiplayer; reduced damage against buildings.
+• Gyrocopter passengers now regenerate jetpack fuel.
+• Pop-up bombs now do more damage over a larger area when destroyed.
+• Increased bush pack fade out speed (now fades out at beginning of animation instead of end).
+• Added head tracking to more Mecc animations.
+• Deployable turrets no longer reduce movement speed.
+• Greatly reduced distance that bush pack is audible from.
+
+Reaper:
+• Cluster: cluster now launches 5 smaller projectiles in an arc upon impact.
+• Cloak: reduced duration in multiplayer.
+• Cloak: can now be disabled by pressing cast spell again.
+• Hail: reduced damage. Now works properly at high elevations.
+• Follow: reduced damage. Fixed Meccs getting caught by follow for too long and being released with too much force.
+• Teleport: fix fake Reapers being created below the seabed if spell targeted on water. Add visual effect when fake Reapers time out. Fake Reapers will play the swimming animation when in water.
+• Slow Time: now has to be cast a certain distance away from any other slow spells in multiplayer. Reduced casting delay, slow no longer affects casting Reaper.
+• MP only: increased Reaper sword damage.
+• Powerup bow: reduced damage.
+• Reapers can no longer teleport while carrying the flag.
+• Reapers can no longer regenerate health in the water or place party house items while cloaked.
+• Smoothed Reaperski movement in multiplayer.
+• Player markers now appear for fake Reapers created by teleport in multiplayer.
+• Reaper movement no longer stops while in the hail targeting screen.
+• Reaper spell casting is now timed and no longer tied to animation (can't be made instant by jumping or moving).
+• Added new visual effects and animations to spell casting.
+• Sea Monster is now a castable spell instead of a party house item.
+• Reaper spells now target the current crosshair location after the animation is finished playing, instead of the original cast location.
+• Added procedural head tracking animations to Reapers (head position follows cursor).
+• Increased tornado range from 350 to 400 units; decreased spawn time.
+• Fire circle now appears where it is aimed, but it cannot be cast too close to the player.
+• Players caught by the Follow spell are now immune to other forms of damage while held.
+
+Kabuto:
+• Increased damage of level 1 and 2 adrenaline attacks.
+• Smoothed offspring movement in multiplayer.
+• Fixed Kabuto being unable to damage Reaper portals.
+• Fixed players becoming stuck in an offspring's mouth permanently after dying.
+
+Bug Fixes:
+• Fixed Meccs being unable to enter gyrocopter as a passenger with the flag.
+• Fixed various crash to desktop issues. Added a crash reporter to help diagnose remaining bugs.
+• Fixed invisible terrain on Radeon cards with bumpmapping enabled.
+• Fixed turret/party house building "respawning".
+• Fixed ground ripples from pop-ups and Kabuto attacks not always appearing.
+• Fixed points for returning a flag being awarded to the wrong player.
+• Fixed an out of objects error on maps with weather effects.
+• Fixed Reapers exiting from the wrong side of the spellshop in some cases.
+• Fixed a bug that caused skis to take more damage than they should while a Reaper is in one.
+• Fixed cloaked towers and objects placed on them not being invisible for late joiners.
+• Fixed Reapers being unable to place turrets on the command center.
+• Fixed a bug that allowed players to damage teammates.
+• Fixed Kabuto still playing the death animation after respawning.
+• Fixed animation blending/selection bugs on Reapers that caused visual glitches.
+• Fixed Reapers not being able to deal damage with the sword while in turbo.
+• Reapers now take fall damage as intended.
+• Fixed missile lock warning sound playing repeatedly.
+• Fixed missing water impact effects for grenades.
+• Fixed Kabuto's health bar occasionally going out of sync.
+• Fixed an issue that could cause Reapers to become frozen when casting spells too quickly or placing mines.
+• Fixed Reapers being able to place mines more quickly while in the air.
+• Fixed Reapers being able to target Meccs in bush mode.
+• Kabuto should no longer be able to "double eat" enemies due to network lag.
+• Fixed bug that caused grenades to be thrown from right hand of Meccs instead of the left.
+• Fixed Reaper head becoming see through when jumping in certain situations.
+• Fixed a bug where shrink would not wear off Kabuto.
+• Fixed some cases where the Follow "funnel" effect would not show up in the correct location.
+• Reaper spells should no longer continue casting after respawning if the player is killed mid-cast.
+• Fixed offspring remaining alive if Kabuto dies while they are tunneling.
+• Add sanity checks on multiplayer packets to prevent cheating and the server getting into a bad state.
+• Prevent players from entering minishops while deploying items.
+• Prevent player from getting into party house/giftshop view simultaneously.
+• Fixed mine count getting reset to 0 when entering a shop and available team mines are low.
+• Fixed some causes of intermittent crashes when loading .gck multiplayer worlds.
+• Keymap and SP save game data are now stored in %LocalAppData%\Giants instead of the game folder to avoid write permission issues to Program Files.
+• Giants.log is now written to %LocalAppData%\Giants instead of the game folder.
+• Fixed a bug that could prevent Kabuto from moving after spiking a Raik.
+• Fixed weapons firing backwards when the cursor is over an object near the back of the 3rd person camera.
+• Fixed missing smoke, volcano, and lightning effects in SP missions.
+• Fixed Reaper health not updating while shot on the jetski in multiplayer.
+• Turrets ignore cloaked reapers.
+• Verms now ignore cloaked/bushed players.
+• Prevent mines from targeting buildings.
+• Fixed repeated Reaper bow change effect and some instances where the weapon object would not change while switching weapons.
+• Fixed weather state not being reset properly between map loads.
+• Fixed bush pack object being visible for enemy players when entering/exiting repeatedly.
+• Fixed a bug where shop slots could get locked out permanently when using a pop-up bomb while entering a shop.
+• Fixed Reaper spell recharge occasionally not working after using a homing weapon.
+• Toggling environment mapping now takes effect without a map restart.
+
+Dedicated servers:
+• The current rotation's map can now be changed mid-game from the multiplayer options screen.
+• Prevent saving dedicated rotations outside of the \bin folder.
+• Separate executable for dedicated servers (GiantsDedicated.exe). Removed -dedicated command line and dedicated chat command from regular executable.
+• Added support for user-provided DLLs to launch an alternate dedicated server UI (as opposed to 3D rendered game UI).
+
+========================================================
+	
+	1.2 - GIANTS 1.497 UPDATE
+
+Patch 1.497 includes all of the improvements made in previous versions, as well as the following changes:
+
+Bugs fixed from 1.496:
+• Fixed weather only starting once on dedicated servers.
+• Fixed vimp meat/soul energy not being displayed properly for late joiners in base build games.
+• Fixed offspring responding to summons when dead.
+• Fixed a bug that could prevent offspring from dying properly in multiplayer.
+• Fixed a bug that allowed multiple players to join team Kabuto after a server switches from an MvMvM to 3-way game type.
+• Fixed gyrocopters being unusually difficult to target with adrenaline as Kabuto.
+• Fixed Reapers being able to cast Tornado while cloaked.
+• Fixed a bug that prevented Kabuto from being able to spike Reapers.
+• Players no longer lose points when killed by turrets.
+• Solved numerous crash to desktop issues.
+
+General:
+• Attack notifications are no longer played when buildings are damaged by players on the same team.
+• New players are now automatically assigned teams that will best balance the game.
+• Fixed players getting stuck inside of dead offspring.
+• Fixed host being able to enter build pad in base build games when other players are on it.
+• Fixed a bug that caused offspring to take too much damage from the tornado spell.
+• Fixed a bug that caused machinegun ammo usage to vary with framerate.
+• Fixed objects occasionally being destroyed immediately after being thrown by Kabuto.
+• Fixed Reapers being able to jump while casting fire circle.
+• Fixed Reaperski ammo not being synchronized with other players.
+• Fixed various problems with Reaper vimp soul collection in multiplayer.
+• Fixed a bug that caused the Reaper teleport spell to be unusually difficult to cast in some situations.
+• Fixed a bug that prevented Reapers and Kabuto from jumping while on some objects.
+• Fixed a bug that could cause existing players to see an incorrect score for a newly connected player.
+• The dedicated server utility now has the expanded Smartie count options.
+• The patch installer should now be able to install to the Program Files directory under Windows Vista.
+
+New multiplayer features:
+• Left clicking teammates in the map menu will cause their name tag and health to be displayed at all times.
+• Points are now awarded for returning your team's flag based on how close it was to being captured.
+• The location of the enemy flag is now shown when a teammate picks it up.
+• Added a voting system. Players can call votes from the multiplayer options screen (accessed by pressing F1) on dedicated servers if the host has enabled it.
+
+Kabuto:
+• Weakened offspring.
+• Kabuto can no longer eat or feed trees to offspring.
+• Rock generators now work properly in multiplayer. Added generators to several maps.
+• Players are now awarded points for killing offspring in multiplayer.
+• Kabuto's crosshair now properly reflects whether targets are in range of long-distance adrenaline attacks.
+• Offspring can now attack players in Reaperskis.
+
+Meccs:
+• Reduced repair pack teammate healing bonus.
+• Reduced range and speed of gyrocopter and handheld machine gun projectiles.
+
+Reapers:
+• Homing bow: ammo increased from 10 to 15. Projectiles are now louder and can be heard from farther away.
+• Tornado: reduced maximum casting range and duration. Tornadoes will now disappear if the casting Reaper is killed before casting has completed.
+• Tornado: reduced damage against base buildings and turrets.
+• Firewall/fire circle: increased damage against Kabuto and offspring.
+• Cluster: reduced casting delay and projectile speed.
+• Added a sound to flares.
+• Mines launched in mid air no longer have extra force.
+• Fake Reapers created by the teleport spell now have player markers in multiplayer.
+• Improved some visual effects.
+
+Reaperski:
+• Reaperskis are now spawned with full ammo.
+• Reaperskis controlled by other players should no longer appear to move strangely when on land.
+• Tweaked ski handling.
+• Made it easier to do damage by ramming objects.
+• Fixed some targeting problems with homing missiles.
+• Increased health.
+• Reapers now take damage when their ski is destroyed.
+
+Singleplayer:
+• Added weather to more singleplayer maps.
+• Improved AI responsiveness on base building missions.
+
+========================================================
+
+	1.3 - GIANTS 1.496 UPDATE
+
+Patch 1.496 includes all of the improvements made in previous versions, as well as the following changes:
+
+Major multiplayer improvements:
+• Integrated server browser, accessible from the Join Multiplayer Game menu.
+• Integrated anti-cheat functionality for multiplayer games.
+• Fixed all known multiplayer cheats/exploits.
+• Giants now automatically loads .gck world modpacks created by GiantsEdit if they are placed in the Worlds folder. Maps can be automatically downloaded from the server host.
+• Fixed a bug that could cause other players to appear to die and come back to life repeatedly when damaged.
+• Fixed occasional crashing when using fully-charged adrenaline attacks as
+Kabuto.
+• Smoothed out Reaper movement in multiplayer, fixed some missing animations.
+• Increased player object update rates.
+• Added full support for 3-team Mecc vs. Mecc vs. Mecc games.
+• Weapon (un)availability can now be set by the host of the game through a menu in the multiplayer options screen.
+• Added 24 community-made multiplayer maps.
+
+Minor multiplayer improvements:
+• Base build games are joinable in progress.
+• Fixed a rare crash in 3-way games for late joiners before entering the game.
+• Fixed a bug that prevented late joiners from damaging gyrocopters.
+• Fixed various other problems for late joiners.
+• Fixed a bug that could cause invisible Smarties to appear in the center of the map for late joiners.
+• Fixed a bug involving the Reaper turbo ability that could cause them to become "floaty".
+• Fixed some projectiles (including mines and some Reaper spells) not being removed when the owning player leaves the game.
+• Fixed a bug that could cause the sound volume to be set to 0 when joining a game through GameSpy.
+• Changed the behavior of the "-highbandwidth" command line switch. This is now a server-side only setting that will increase the update rates for
+all clients, regardless of whether they have enabled the option themselves or not.
+• Added more options for the max smarties setting.
+• Vimp spawning can now be toggled on or off by the host in game.
+• The world's terrain fog setting now limits the visible range of player markers.
+• Fixed a bug that caused enemy player markers to disappear from some angles in 3-way games.
+• The mute button now works properly.
+• Removed "Lost World" restrictions.
+
+Graphical improvements:
+• Giants now uses 32 instead of 16 bit color for transparent textures when in 32-bit color modes.
+• Included the DirectX 8 renderer that shipped with the GeForce 3 version of Giants. This is enabled by default on graphics
+cards that support it, and can now be toggled on or off in the graphics options menu.
+• Added "Very High" model and shadow detail settings.
+• Added a "high" setting for enhanced water effects that uses a higher resolution water texture.
+• Added an option to enable dynamic lighting on some effects.
+• Increased maximum number of shadows and decals visible at once.
+
+General changes:
+• Weather is synchronized in multiplayer. Weather effects can now be easily added to custom multiplayer maps.
+• Improved performance and appearance of weather effects.
+• Minimizing the game in windowed mode should work better.
+• Object limit doubled.
+• Added a new command line, "-framelimit", to limit frames per second.
+• Fixed a bug that could cause some objects to not be hurt by area damage in certain situations.
+• Fixed projectile collision detection on many objects.
+• Fixed some sounds that could get stuck in a loop.
+• Fixed alt+tab problems under Windows Vista.
+
+General balance changes:
+• Mines left on the battlefield will explode after a set amount of time.
+• Increased maximum mines per team to 30.
+• Enemy party house buildings are no longer visible on the map.
+• Gyrocopters and reaperskis now deal a small amount of splash damage to nearby enemies when destroyed.
+
+Meccs:
+• Sniper rifle: reduced range, damage, and ammunition.
+• Repair pack: increased self-healing rate. Teammates are now healed more quickly.
+• Repair pack: repair packs can now be used by gyrocopter passengers.
+• Jetpack upgrade: increased rate of fuel recharge. Nitro is more powerful.
+• Stealth bush: increased movement speed while bush is active.
+• Gyrocopter: increased projectile speed, refire rate, and range of machine gun. Mortars now have a short delay.
+• Machine gun: increased projectile speed, refire rate, and range. Reduced ammunition.
+• Mortar: Grounded mortars detonate more quickly.
+• Meccs can now enter enemy gyrocopters.
+• Backpack items can no longer be activated while drowning in deep water.
+• Unpiloted gyrocopters are now destroyed when they land in deep water.
+• Headshots will now deal extra damage to enemy Meccs.
+• Fixed proximity missiles not exploding when near objects if fired directly at a target.
+• Fixed a bug that made it unusually difficult to hit small objects with the gyrocopter machine gun.
+• Fixed a bug that could cause gyrocopters with passengers to randomly explode.
+• Fixed name tags being shown for enemy Meccs in the stealth bush.
+• Prevented homing missiles being locked on to enemy Meccs in the stealth bush.
+• Fixed Meccs not dropping RPGs when killed if they are equipped.
+
+Reapers:
+• Repair: duration is no longer infinite when healing damaged objects.
+• Firewall/Fire Circle: increased damage against Reapers and Kabuto.
+• Slow time: area of effect reduced by 20%, and it now has a vertical limit.
+• Slow time: the casting Reaper is no longer immune to the effects of their own slow time spells, but they are slowed by it less than enemies.
+• Follow: reduced projectile speed.
+• Cloak: spells and mines can no longer be used while cloaked.
+• Sniper bow: reduced range, damage, and ammunition.
+• Powerup bow: limited maximum range.
+• Sea monster: increased radius and damage of projectile.
+• All spells, mines, and flares now have a re-casting/throwing delay that cannot be avoided by jumping.
+• Reduced maximum health.
+• Increased turbo energy regeneration and movement speed.
+• Increased swimming speed.
+• Increased most spell recharge costs.
+• Reapers now start with an RPG bow and full turbo energy in multiplayer.
+• Headshots will now deal extra damage to enemy Reapers.
+• Fixed Reapers being able to damage their own team's buildings with the sword.
+• Fixed Seamonsters damaging team buildings.
+• Fixed Reapers being able to jump while held by follow.
+• Fixed a bug that caused swinging swords into steep terrain to push players backwards across long distances.
+• Fixed player markers remaining visible when on cloaked towers.
+• Fixed Meccs occasionally becoming permanently held by the Follow spell.
+• Fixed weapons becoming visible after switching them while cloaked.
+• Fixed target health bar being partially obscured by the turbo energy graphic.
+
+Kabuto:
+• Adrenaline: roaring now increases the rate of adrenaline recharge.
+• Offspring: Offspring now defend each other and Kabuto from attackers, and will automatically attack nearby enemies.
+• Offspring: eating enemies and vimp chunks now restores health.
+• Kabuto can now pick up and throw small-to-medium sized palm trees.
+• Kabuto can now grab smarties that have been ejected from damaged party houses.
+• Meccs and Reapers can no longer switch weapons or use items when held by Kabuto or offspring.
+• Young vimps restore less health when eaten.
+• Vimp herds are now spooked when Kabuto eats them.
+• Fixed Offspring occasionally becoming stuck in the tunneling animation.
+• Fixed Offspring being able to pounce on enemies while tunneling.
+• Fixed cluster spell being able to damage Kabuto's weakspot.
+• Fixed adrenaline attacks damaging offspring weakspots.
+
+Miscellaneous/minor changes:
+• Fixed sun flares being visible during some weather effects.
+• Fixed repeated egg laying sounds for Kabuto.
+• Fixed rendering of gyrocopter shadows.
+• Fixed Verm death animations.
+• Fixed a bug that made Reaperman machine gun fire overly inaccurate.
+• Fixed some issues when restarting singleplayer missions.
+
+
+* Various other minor fixes across the board.
+
+========================================================
+
+	1.4 - GIANTS 1.4 UPDATE
+There were several beta versions made between 1.1 and the current 1.4.  Below is a list of most of those changes and additions affecting the 1.1 version.
+
+*Compatibility
+- VERY IMPORTANT: This patch (and every future patch of Giants) will require DirectX 8.0 or later to be installed on your system.  You can install DirectX 8.0 from the Giants CD, or download it from microsoft.com.
+- Bumpmapping should now be enabled for the NEC Kryo and there should also be a slight performance increase on this video card.  These changes affect the Kryo only.
+- Fixed a graphics driver problem that will give some video cards a slight performance increase.
+- Giants networking code has been upgraded to use DirectPlay 8.0.  This should allow Giants to work better with network routers that use NAT (Network Address Translation). Giants now uses a single port for all multiplayer communication.  The default port is 19711, but this can be overridden on the command line via the "-port" options (example: "giants -join 192.168.1.10 -port 4500").  A computer behind a NAT router should have no problem joining a server on the outside Internet.  A computer behind a NAT router should be able to host a game, if the NAT router forwards the Giants port to that computer.  For computers that are not behind NAT routers, nothing will change (except that network performance will be slightly improved).
+
+*General Issues
+- Fixed a bug where the reaper could not build turrets on a tower that was over deep water.
+- Fixed Kabuto throwing bug where if the throw button was held down, he would not throw the object.
+- The patch installer for this version removes the MPlayer links that are related to Giants.  A link to GameSpy Arcade is added.  Also, the patch installer offers to install GameSpy Arcade.
+- Fixed a potential bug that would cause the camera to get "stuck" in baseview, and the player could not exit baseview by hitting ESC or clicking the "Back" button.
+- Mouse sensitivity is now configurable via the game menus (keymapping options), as well as via the command-line parameter.  The command-line setting overrides the menu setting.
+- The in-game chat system is better, allowing longer messages.  Also, the HOME, END, INSERT, DELETE, and arrow keys work in the chat edit box as expected.
+- Fixed a problem where Model Detail setting was not being saved correctly.  A side effect of this fix may be that Model Detail will be set to "Low".  If you make sure to set it to the correct setting for your machine and desired framerate, it will use that setting from then on.
+- Fixed a problem that would cause the player to exit a gift shoppe from the wrong exit.
+- Editing abilities and debug invincibility have been removed from the game.  We are mainly concerned with players cheating during multiplayer games.  Having said that, we may find a way in the future to allow the player to access the editor for single player levels as an unsupported feature.
+- Game now saves/restores invert mouse option and lod option settings
+- Keyboard "Enter" can now be mapped easily to an action 
+- Fixed a bug that allowed mortars to have unlimited range.
+- Fixed a bug that allowed Meccs to fire too quickly when attached to a gyrocopter or being held by Kabuto.
+- Fixed a bug that caused Kabuto to twitch when throwing and running at the same time.
+
+*Multiplayer Major Issues
+- A bug involving incorrect names being displayed has been fixed.  This had a chance of occurring if a player leaves the game and another player immediately joins.
+- Due to popular demand, there are now two new Game Team settings: Mecc vs Kabuto and Reaper vs Kabuto.  These 2-team games will take place on the 3-way islands, and will disallow Reapers or Meccs, respectively.
+- Kabuto now gets 1/5 the normal score for killing a Mecc or Reaper.
+- In Capture The Smartie games, team scores now reflect the number of smartie captures the team has made, rather than the team's combined kills.  In addition, the player who performs the capture receives the Points Per Capture score added to his or her personal score. In normal deathmatch games, scoring has been unchanged (except for the Kabuto change above).
+- The dedicated server tool should now work across all Windows operating systems.
+- Weapon and party house item availability is now adjustable by the host in a multiplayer game.  This enables the host to block certain weapons, spells, or partyhouse items from being available in the game.  This can be set either by the dedicated server tool GUI, or on the command line.  See readme_dedicated.txt for details.
+- Fixed a lockup bug that would happen when a player tried to enter a gyrocopter in a high-lag situation. 
+- Fixed a bug that would cause Kabuto to fly around randomly in a high-lag, high-packetloss situation.  
+- Death messages are now much more varied and interesting.
+- Added a dedicated server mode to Giants.  This mode requires the use of a Windows tool that came with this patch, Dedicated.exe, which creates a sequence of levels and options to run on a Giants server.  You can launch the game from the tool, or use the "-dedicated filename.gdf" command-line parameter of giants.exe. Read "readme_dedicated.txt" that came with this patch for details on the tool.
+- Giants now supports two additional multiplayer game types: "Defend the Base" and "Defend Base with Smartie Capture".  In these game types, which are join-anytime games, the Meccs and Reapers start with fully built bases, but the base buildings can be destroyed (and repaired).  Note that Kabuto is allowed to play in these game types.
+- Fixed synchronization problems with base items.  This was causing joiners to crash just before they entered game and other issues like seeing gyropads that aren't there, not seeing gyropads that are there, having multiple gyropads, etc. 
+- Changing the max players while in a game now works better.
+- Fixed a resource leak when firing certain weapons.  This should help performance in longer lasting games.
+- Fixed a crash bug involving casting the slow follow spell while you have a the homing bow locked onto the same target.
+- Fixed rare audio crash with ambient sounds.
+- The host of the game may now shrink or disable player markers (the triangles over the players' heads) via a command line option or a chat password.  On the command line, using "-pmarkers 0" will cause player markers to be large (as they are by default).  Using "-pmarkers 1" will cause player markers to be small.  Using "-pmarkers 2" will disable player markers.  To cycle through the settings during the game, the host can enter "pmarkers" in the chat window.
+- The host of the game may now disable friendly fire on partyhouse buildings via a command line option or a chat password.  On the command line, using "-nophff" will disallow damage by teammates on their own towers, gyropads, etc.  To toggle the setting during the game, the host can enter "nophff" in the chat window.
+- Gyrocopters now have limited machinegun ammo, which can be refilled by landing on the gyropad.
+- Turrets no longer have a vertical limit for tracking targets.  Targets far above ground-based turrets will still be locked onto and fired upon.
+- The partyhouse is now disabled if it becomes too damaged.  It must be repaired before it can be entered.
+- Dedicated servers may now hand off administrative duties to a client.  See the readme_dedicated.txt for details.
+
+*Multiplayer Minor Issues
+- When changing settings on the "Multiplayer Settings and Options" screen, if a change to the game type or game teams invalidates another setting, the other setting will choose a valid default rather than choosing "None" or "???".
+- Players who join a game after the host is already in the game will enter the game as soon as possible, rather than waiting for the Join button to be pressed.
+- Turrets now fire at Reapers riding reaperskis.
+- There are now different messages for when players leave the game depending on whether they left on purpose or lost their connection somehow.
+- Reapers can no longer cast spells while in Kabuto's hand or after being thrown by Kabuto.
+- Reaper can no longer use cloak spell if she is carrying the enemy flag.
+- Changed the staging screen so that the host may start the game before everyone in the game has finished loading.  This is true for "join-anytime" games only.
+- Fixed a late-joiner issue regarding bases that may have been causing synchronization problems.
+- Fixed a problem where turrets would explode when the host player changed teams.
+- Fixed a small problem with the camera on a reaperski in a multiplayer game.
+- Fixed a potential problem with gyrocopters falling out of sync.
+- Slightly changed how scoring works for turrets.  Now, being killed by a turret will count as a team kill for the team who built the turret.  Note that no single player gets points for turret kills.
+- Fixed reaper turbo map mode cheat.
+- Fixed reaper turbo jumping cheat.
+- Fixed reaperski instant kill while turboing.
+- Prevented projectiles from lingering after the player that fired them leaves the game.
+- Removed 3-way game restrictions. Can now have more than 9 players and they can all be meccs if you want. However, still only 1 Kabuto is allowed.
+- Fixed a bug where meccs would become oversized due to reaper shrinking.
+- Reaper Powerup bow will now target kabuto offspring. 
+- Casting smartie grab and slow follow spells on smarties at the pub now works properly.
+- Reaper can no longer use teleport spell to teleport inside objects.
+- Reaper can no longer cast follow spell on smartie in the bubble she is carrying.
+- Reaperski powerups won't respawn if their associated pier is destroyed.
+- Giants now is more careful about selecting network connection types.  TCP/IP connection types associated with DirectPlay should always be used now.
+- When a server address is specified, either on the command line or in the box provided in the menus, Giants now accepts a host name (e.g. "example.com") as an alternate to a host IP number (e.g. 192.168.1.10).
+- Fixed a bug that would cause a Mecc to become very small after dying while shrunk.
+- Offspring are now more aggressive towards reapers.
+- Kabuto can now cause damage to reaperskis.
+- Dedicated servers no longer need the Giants CD in the CD drive.
+- Fixed a bug that caused Kabuto to take too much damage from the tornado spell.
+- Fixed a bug that allowed too many miniature turrets to be placed by a team.
+- Fixed a bug that caused the on-screen smartie count indicators to be incorrect for Kabuto.
+
+  
+* Various other minor fixes across the board.
+
+========================================================
+	1.5 - GIANTS 1.1 UPDATE
+*Compatibility
+- Added the "-noprimary" command line to bypass primary card. Useful if you have more than one video card and the first card is incompatible.
+- You can now change resolutions to the lowest available selection even if you have less than 8 selections.  Among other things it allows the Voodoo2 and Voodoo Banshee to select 640x480 resolution.
+- Major improvements on Intel810 video cards when used with the "-nofog" commandline parameter.
+- Ati Rage Fury Maxx now forces use of the -mixalpha switch which corrects some minor texture issues.
+- Voodoo Banshee texturing problems have been greatly improved.
+- S3 Savage 4 cards should look a lot better now.
+- Crash relating to not have a sound card or Direct Sound drivers installed is fixed.
+- NOTE, THIS GIANTS PATCH MAY REQUIRE INSTALLATION OF DIRECTX 8 IN ORDER TO WORK CORRECTLY ON SOME VIDEO CARDS, IT IS HIGHLY RECOMENDED THAT YOU INSTALL DIRECTX 8 (INCLUDED ON THE CD) IF YOU'RE EXPERIENCING ANY GRAPHICS PROBLEMS.
+
+*Single Player
+- A crash bug that occured during base building missions when a Reaperman coming out of the large Barracks at a specific time and was killed is fixed.
+- Another crash bug that occured during base building missions when a smartie was dropped off at a damaged base was fixed.
+- A crash bug involving the Mecc's repair gun in the gift shop was fixed.
+- Various bugs fixed when using the replay in game movie feature were fixed.
+- Objects becoming invulnerable after restarting a mission after death was fixed.
+- Kabuto should no longer get frozen on bunkers during the last fight of single player campaign.
+- Yan should be in the lower corner of the reaper base build screen.
+- Text and voiceover should now be correct for base building missions, Yan/Delphi and Borjoyzee/Mecc.
+- Directional audio playback was improved.
+- A crash when attempting to cast a spell that doesn't exist was fixed.
+- Yan respawning during base building missions should now be better.
+- Duplicate reaperski on the final race should no longer appear.
+- A rare circumstance where mines/flares/syringes were not being refilled during Reaper missions was fixed.
+- Mecc machinegun ammo wasn't always being replenished when it should at the start of a new mission is now fixed.
+- A couple cases where a reaperman could get stuck in certain animations was fixed.
+- The crash were a Raik in the process of casting summon fire circle is killed was fixed.
+- Save game information now works for player id's that have invalid ascii characters in them.  To preserve previous saved games, you must delete the invalid player id and recreate it.
+- Placing backpack turrets in first-person view is now correct.
+- Several other small bugfixes and enhancements were made.  Finding them will be left as an exercise to the reader.
+
+*Multiplayer problems
+- Several crashes involving players joining after the game has started were fixed.
+- A few bugs associated with using the hail spell in multiplayer were fixed.
+- The tornado spell should be more Internet friendly in terms of game slowdown.
+- Reaperskis should no longer be able to go through base building items regardless of speed.
+- A few bugs problems with Reaper death and respawn should be handled better now.
+- Turrets will shoot at offspring now.
+- Offspring and Kabuto can attack all turrets now.
+- A user controlled Hellfire turret should no longer damage teammates when team damage is turned off.
+- Starting a second consecutive game will crash a client if they try and mute another client has been fixed.
+- Proximity missiles fired by player attached to helicopter (not pilot) explode immediately when team damage is turned on is fixed.
+- Reaper Firewall and Firecircle spells are more Internet friendly and give correct credit when killing enemy.  They also now obey team hurt rules.
+- Can no longer grab smarties from party house with reaper smartie grab spell.
+- Invisible/Invulnerable bug for near-death meccs and reapers is now fixed.
+- Lobby crash when trying to join game has been fixed
+- Gyrocopter synch problems causing crashes has been fixed.
+- Rare reaperski crash has been fixed.
+- Controlling party house turrets from the Comm Center now works correctly.
+- Gyrocopter passengers can now use flares and mines.
+- Player can no longer hit themselves when throwing mines.
+- Mini Turrets now deploy from the meccs back 100% of the time.
+- Bug where Reaper repair spell could get stuck on permanently is fixed.
+- Players with team "???" are no longer allowed to join the game until they choose a valid team.
+- New meaning of existing button: the "Allow Team Changes" button in the multiplayer screen now toggles the ability of players to change teams after they have started playing.  Regardless of this setting, players can change teams while in the lobby staging screen.
+
+*New Command line settings
+- Use -mspeed <value> to adjust mouse sensitivity (range is 0.0 which is slowest, and 1.0 which is fastest) The default speed is 0.5, and acceptable values are 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, and 1.0.
+
+* Various other minor fixes across the board.
+
+========================================================
+========================================================
+2. GETTING MORE INFORMATION
+	2.1 README.TXT
+For more information, including game controls, multiplayer setup, and legal information, please see the readme.txt which came with the original Giants retail release, or the readme_english.txt, which came with the Giants 1.1 patch.
+
+========================================================
+Giants Citizen Kabuto: Copyright 2001 by Planet Moon Studios.  All Rights Reserved.  Planet Moon and the Planet Moon logo are trademarks of Planet Moon Studios.  Giants, Giants: Citizen Kabuto, Interplay, the Interplay logo, "By Gamers For Gamers", Digital Mayhem and the Digital Mayhem logo are trademarks of Interplay Entertainment Corp.  All Rights Reserved.  Exclusively licensed and distributed by Interplay Entertainment Corp.  All other copyrights and trademarks are the property of their respective owners.
+========================================================
+
+< End of File>
